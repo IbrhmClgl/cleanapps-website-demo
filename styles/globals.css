@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+
+html {
+  scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.backgroundcolor {
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#A40606] text-white py-2 px-4 rounded inline-block font-medium border border-[#ff4D41] hover:bg-[#D7816A] hover:text-black transition duration-200;
+  }
+
+  .inputStyle {
+    @apply outline-[#A40606] border-gray-400 border rounded-[5px] px-4 py-2 w-[100%];
+  }
+}
